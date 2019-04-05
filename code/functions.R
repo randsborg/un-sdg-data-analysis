@@ -79,7 +79,7 @@ plot_world_heatmap <- function(data, ind, year) {
 
 save_last_plot <- function(filename, w_mm = 400, h_mm = 200) {
   
-  ggsave(filename = paste(filename, '.png', set = ''),
+  ggsave(filename = paste(filename, '.png', sep = ''),
          plot = last_plot(),
          path = './figs/',
          device = 'png',

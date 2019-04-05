@@ -8,8 +8,8 @@ library(gridExtra)    # Tools to work with grid graphics
 library(gifski)       # Convert image frames to GIF animations
 
 ### Tidy data locations
-tidy_file = "./rdas/tidy_dat.rda"
-world_map_file = "./rdas/world_map.rda"
+tidy_file = "./tidy_data/tidy_dat.rda"
+world_map_file = "./tidy_data/world_map.rda"
 
 ### Attach tidy data to namespace
 if(!exists("dat")) load(tidy_file); rm(tidy_file)

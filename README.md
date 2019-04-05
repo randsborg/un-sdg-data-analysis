@@ -18,9 +18,9 @@ Spatial map data | [maps](https://cran.r-project.org/web/packages/maps/index.htm
 
 **figs:** Generated plots and GIFs.
 
-**raw_data:** Scraped data is downloaded here.
+**raw_data:** Downloaded data is saved here.
 
-**rdas:** Processed data is saved here.
+**tidy_data:** Processed data is saved here.
 
 
 ## Project outline

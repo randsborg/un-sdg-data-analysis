@@ -13,8 +13,8 @@ gapminder_file = "./raw_data/gapminder_country_list.rda"
 world_bank_file = "./raw_data/world_bank_population_data.rda"
 
 ### Tidy data destinations
-tidy_file = "./rdas/tidy_dat.rda"
-world_map_file = "./rdas/world_map.rda"
+tidy_file = "./tidy_data/tidy_dat.rda"
+world_map_file = "./tidy_data/world_map.rda"
 
 ### Attach raw data to namespace
 if(!exists("un_sdg_data")) load(un_sdg_file); rm(un_sdg_file)

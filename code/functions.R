@@ -66,10 +66,13 @@ plot_world_heatmap <- function(data, ind, year) {
     scale_fill_gradient(low = "#56B1F7", high = "#132B43", na.value = 'lightgrey') +
     
     # Theme adjustments
-    theme(plot.title = element_text(size = 18, face = 'bold'),
-          plot.subtitle = element_text(size = 16, hjust = 0),
+    theme(plot.title = element_text(size = 9, face = 'bold'),
+          plot.subtitle = element_text(size = 7, hjust = 0),
           axis.ticks = element_blank(),
           axis.text = element_blank(),
+          legend.key.size = unit(6, 'pt'),
+          legend.title = element_text(size = 3),
+          legend.text = element_text(size = 4),
           panel.background = element_rect(fill = 'white'),
           plot.background = element_rect(fill = 'white'),
           panel.border = element_rect(size = 1, colour = 'gray50', fill = NA))
@@ -77,13 +80,18 @@ plot_world_heatmap <- function(data, ind, year) {
 }
 
 
-save_last_plot <- function(filename, w_mm = 400, h_mm = 200) {
+save_last_plot <- function(filename, w = 1280, h = 720, dpi = 300) {
+  
+  # Convert width and heigh from pixels into cm because ggsave() doesn't accept pixels as a unit
+  w_mm <- w/dpi
+  h_mm <- h/dpi
   
   ggsave(filename = paste(filename, '.png', sep = ''),
          plot = last_plot(),
          path = './figs/',
          device = 'png',
-         width = w_mm, height = h_mm, units = 'mm')
+         dpi = dpi,
+         width = w_mm, height = h_mm, units = 'in')
   
 }
 

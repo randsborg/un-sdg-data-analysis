@@ -42,7 +42,7 @@ gif_world_heatmap(dat, "8.1.1", 2000, 2015, "gif_annual_rgdp_growth")
 gif_world_heatmap(dat, "7.2.1", 2000, 2015, "gif_renewable_energy_share")
 
 # CO2 emissions per unit of value added, year 2000-2015
-gif_world_heatmap(dat, "9.4.1", 2010, 2015, "gif_co2_per_unit_of_value")
+gif_world_heatmap(dat, "9.4.1", 2000, 2015, "gif_co2_per_unit_of_value")
 
 # Internet users per 100 inhabitants, year 2000-2015
 gif_world_heatmap(dat, "17.8.1", 2000, 2015, "gif_internet_users")
